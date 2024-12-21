@@ -1,0 +1,16 @@
+{
+  "name": "STM32 Rust Dev",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu", 
+  "features": {
+    "rust": "latest"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",  // Rust 支持
+        "ms-vscode.cpptools"       // C/C++ 支持（为 ARM 工具链）
+      ]
+    }
+  },
+  "postCreateCommand": "./.devcontainer/setup.sh"
+}
