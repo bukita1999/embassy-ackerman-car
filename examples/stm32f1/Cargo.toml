@@ -31,7 +31,9 @@ nb = "1.0.0"
 static_cell = "2.0.0"
 
 [profile.dev]
-opt-level = "s"
+debug = true
+opt-level = "z"
+lto = false
 
 [profile.release]
-debug = 2
+debug = true

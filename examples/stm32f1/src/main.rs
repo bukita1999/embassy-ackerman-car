@@ -51,7 +51,7 @@ async fn main(_spawner: Spawner) {
             error!("Failed to set PWM duty 1");
         }
         embassy_time::Timer::after_millis(2000).await;
-
+        
         if let Err(_e) = pwm_ctrl.set_pwm_duty(0, 75.0).await {
             error!("Failed to set PWM duty 2");
         }
